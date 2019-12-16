@@ -12,6 +12,6 @@ for pixel in tree:
 tree.value = tree_colors
 
 while True:
-    for pixel in tree_colors:
-        pixel += Hue(deg=1)
+    for i in range(len(tree_colors)):
+        tree_colors[i] += Hue(deg=1)
     tree.value = tree_colors
