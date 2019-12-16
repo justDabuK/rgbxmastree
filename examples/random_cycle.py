@@ -8,4 +8,5 @@ for pixel in tree:
     pixel.color = Hue(deg=randint(0, 360))
 
 while True:
-    tree.color += Hue(deg=1)
+    for pixel in tree:
+        pixel.color += Hue(deg=1)
