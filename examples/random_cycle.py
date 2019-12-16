@@ -7,7 +7,7 @@ colors = [Color('red'), Color('green'), Color('blue')]  # add more if you like
 tree_colors = []
 
 for pixel in tree:
-    tree_colors = colors[randint(0, 2)]
+    tree_colors.append(colors[randint(0, 2)])
 
 tree.value = tree_colors
 
