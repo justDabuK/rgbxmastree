@@ -1,7 +1,7 @@
 from tree import RGBXmasTree
 from colorzero import Color, Hue
 
-tree = RGBXmasTree()
+tree = RGBXmasTree(brightness=0.05)
 
 tree.color = Color('red')
 
