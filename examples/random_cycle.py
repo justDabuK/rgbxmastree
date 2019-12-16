@@ -16,7 +16,8 @@ def random_colors(n):
 
 tree = RGBXmasTree(brightness=0.05)
 
-tree.value = random_colors(25)
+for pixel in tree:
+    pixel.color = Hue(random())
 
 while True:
     tree.color += Hue(deg=1)
